@@ -4,7 +4,7 @@
  *
  * Written by Marius Stanciu - Sergiu <marius@vox.space>
  * Licensed under the MIT license https://vox.SPACE/LICENSE-MIT
- * Version 1.2.2
+ * Version 1.2.3
  *
  */
 
@@ -128,7 +128,7 @@
             ctx.closePath();
             if (settings.showText === true) {
                 ctx.fillStyle = settings.fontColor;
-                ctx.font = (settings.fontStyle !== '' ? settings.fontStyle + ' ' : '') + settings.fontSize + ' ' + settings.font;
+                ctx.font = (settings.fontStyle !== '' ? settings.fontStyle + ' ' : '') + settings.fontSize + ' ' + settings.fontFamily;
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
                 ctx.fillText(settings.percentage + '%', hw, hh);
